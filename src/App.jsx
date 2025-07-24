@@ -8,7 +8,7 @@ import health3 from './assets/health3.png';
 import tran1 from './assets/Tran1.png';
 import tran2 from './assets/Tran2.png';
 import tran3 from './assets/Tran3.png';
-import edu from './assets/edu.png';
+import edu from './assets/Edu.png';
 import enter1 from './assets/enter1.png';
 import enter2 from './assets/enter2.png';
 import enter3 from './assets/enter3.png';
