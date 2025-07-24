@@ -1,6 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Brain, Home, HeartPulse, Car, BookOpen, Music, Briefcase, TrendingUp, ChevronDown, Menu, X } from 'lucide-react';
-import karthik from './assets/Tran2.png';
+import hero from './assets/hero.png';
+import smart from './assets/smart.png';
+import health1 from './assets/health1.png';
+import health2 from './assets/health2.png';
+import health3 from './assets/health3.png';
+import tran1 from './assets/Tran1.png';
+import tran2 from './assets/Tran2.png';
+import tran3 from './assets/Tran3.png';
+import edu from './assets/edu.png';
+import enter1 from './assets/enter1.png';
+import enter2 from './assets/enter2.png';
+import enter3 from './assets/enter3.png';
+import workplace from './assets/workplace.png';
 // Main App Component
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -96,7 +108,7 @@ export default function App() {
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center transform rotate-180 scale-100"
           style={{ 
-            backgroundImage: `url('src/assets/hero.png')`,
+            backgroundImage: `url(${hero})`,
             backgroundBlendMode: 'multiply'
           }}
         ></div>
@@ -153,7 +165,7 @@ export default function App() {
               </div>
             </div>
             <div className="relative h-64 md:h-96 rounded-xl overflow-hidden shadow-xl">
-              <img src="src/assets/smart.png" alt="Smart home interface" className="w-full h-full object-cover" />
+              <img src={smart} alt="Smart home interface" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -203,13 +215,13 @@ export default function App() {
             <div className="md:col-span-5">
               <div className="grid grid-cols-2 gap-4 h-full">
                 <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                  <img src="src/assets/health1.png" alt="AI diagnostic tool" className="w-full h-full object-cover" />
+                  <img src={health1} alt="AI diagnostic tool" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                  <img src="src/assets/health2.png" alt="Remote patient monitoring" className="w-full h-full object-cover" />
+                  <img src={health2} alt="Remote patient monitoring" className="w-full h-full object-cover" />
                 </div>
                 <div className="col-span-2 aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                  <img src="src/assets/health3.png" alt="AI in medical research" className="w-full h-full object-cover" />
+                  <img src={health3} alt="AI in medical research" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -236,7 +248,7 @@ export default function App() {
                     reducing traffic accidents by 82% and commute times by about 47%.
                   </p>
                   <div className="h-40 bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="src/assets/Tran1.png" alt="Self-driving car" className="w-full h-full object-cover" />
+                    <img src={tran1} alt="Self-driving car" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 
@@ -247,7 +259,7 @@ export default function App() {
                     dynamically rerouting vehicles and adjusting signal patterns.
                   </p>
                   <div className="h-40 bg-gray-100 rounded-lg overflow-hidden">
-                    <img src={karthik} alt="Traffic management system" className="w-full h-full object-cover" />
+                    <img src={tran2} alt="Traffic management system" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 
@@ -258,7 +270,7 @@ export default function App() {
                     cutting delivery emissions by 71% and costs by 43%, redefining urban logistics for a greener future.
                   </p>
                   <div className="h-40 bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="src/assets/Tran3.png" alt="Delivery drone" className="w-full h-full object-cover" />
+                    <img src={tran3} alt="Delivery drone" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -287,7 +299,7 @@ export default function App() {
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <div className="relative h-80 rounded-xl overflow-hidden shadow-lg mb-6">
-                <img src="src/assets/Edu.png" alt="AI tutoring session" className="w-full h-full object-cover" />
+                <img src={edu} alt="AI tutoring session" className="w-full h-full object-cover" />
               </div>
               
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Adaptive Learning Platforms</h3>
@@ -359,7 +371,7 @@ export default function App() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
-                <img src="src/assets/enter1.png" alt="Music composition AI" className="w-full h-full object-cover" />
+                <img src={enter1} alt="Music composition AI" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Personalized Media</h3>
               <p className="text-gray-700">
@@ -371,7 +383,7 @@ export default function App() {
             
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
-                <img src="src/assets/enter2.png" alt="Interactive storytelling" className="w-full h-full object-cover" />
+                <img src={enter2} alt="Interactive storytelling" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Interactive Storytelling</h3>
               <p className="text-gray-700">
@@ -383,7 +395,7 @@ export default function App() {
             
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="h-48 bg-gray-100 rounded-lg overflow-hidden mb-4">
-                <img src="src/assets/enter3.png" alt="AI art collaboration" className="w-full h-full object-cover" />
+                <img src={enter3} alt="AI art collaboration" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Creative Collaboration</h3>
               <p className="text-gray-700">
@@ -453,7 +465,7 @@ export default function App() {
                 </div>
                 <div className="md:w-1/2">
                   <div className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
-                    <img src="src/assets/workplace.png" alt="AI workplace collaboration" className="w-full h-full object-cover" />
+                    <img src={workplace} alt="AI workplace collaboration" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
