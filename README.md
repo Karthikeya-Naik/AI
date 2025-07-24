@@ -56,6 +56,22 @@ Visit **http://localhost:5173** in your browser.
 
 ---
 
+## 🧾 Folder Structure
+```
+AI/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── App.jsx           # Main component with all sections
+│   ├── main.jsx          # React DOM entry point
+│   ├── assets/           # All images like hero.png, smart.png, etc.
+│   └── index.css         # Tailwind directives
+├── tailwind.config.js    # Tailwind configuration
+├── vite.config.js        # Vite bundler config
+└── README.md             # Project documentation
+```
+---
+
 ## ➤ Vercel
 1. Import from GitHub
 2. Use default settings (Vite is auto-detected)
