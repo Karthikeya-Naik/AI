@@ -52,4 +52,18 @@ npm install
 ```bash
 npm run dev
 ```
-Visit http://localhost:5173 in your browser.
+Visit **http://localhost:5173** in your browser.
+
+---
+
+## ➤ Vercel
+1. Import from GitHub
+2. Use default settings (Vite is auto-detected)
+3. Done ✅
+
+---
+
+### Made with ❤️ to explore and share how AI is shaping our future.
+
+
+
